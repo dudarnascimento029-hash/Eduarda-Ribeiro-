@@ -1,0 +1,37 @@
+/* Pagina login */
+body {
+    background: rgba(245, 246, 250, 0.133);
+    color: rgb(63, 59, 59);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.label-padrao {
+    background: rgba(245, 246, 250, 0.133);
+    display: block;
+    font-weight: bold;
+    color: rgb(63, 59, 59);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input-padrao {
+    margin: 6px 0 20px 0;
+    padding: 15 px 20 px;
+    background: rgba(245, 246, 250, 0.133);
+    color: rgb(63, 59, 59);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid rgb(63, 59, 59);
+    width: 100%;
+}
+
+.botao-padrao {
+     background: rgba(245, 246, 250, 0.133);
+     color: rgb(63, 59, 59);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     border: 1px solid rgb(63, 59, 59);
+     padding: 10 px 20 px;
+     cursor: pointer;
+}
+
+#btn-salvar {
+    background-color: blue;
+    color:navy
