@@ -30,8 +30,11 @@ body {
      border: 1px solid rgb(63, 59, 59);
      padding: 10 px 20 px;
      cursor: pointer;
+     font-weight: bold;
 }
 
 #btn-salvar {
     background-color: blue;
     color:navy
+}
+
