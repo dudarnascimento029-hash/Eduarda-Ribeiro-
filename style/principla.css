@@ -1,34 +1,136 @@
+:root {
+    /* paleta de cores principal */
+    --cor-primaria: #008000; /* verde (header, títulos) */
+    --cor-secundaria: #000000; /* preto (destaques, links, botões) */
+    --cor-fundo: #90ee90; /* verde claro (fundos, badges) */
+
+    /* neutras */
+    --cor-fundo: #f5f6fa; /* cinza claro (background geral) */
+    --cor-superfície: #ffffff; /* branco (cartões, formulários e seções) */
+    --cor-borda: #dcdcdc; /* cinza médio (bordas e separadores) */
+    --cor-texto: #000000; /* preto (texto principal) */
+    --cor-texto-muted: #555555; /* cinza escuro (texto secundário) */
+
+    /* tipografia */
+    --fonte-principal: Verdana, Geneva, Tahoma, sans-serif;
+    --tamanho-base: 16px;
+    --linha-base: 1.5;
+
+    /* espaçamento */
+    --espaco-xs: 4px;
+    --espaco-sm: 8px;
+    --espaco-md: 16px;
+    --espaco-lg: 24px;
+
+    /* bordas */
+    --raio-sm: 4px;
+    --raio-md: 8px;
+    --raio-lg: 12px;
+    --raio-xl: 16px;
+
+    /* sombras */
+    --sombra-sm: 0 1px 3px rgba(0, 0, 0, 0.10);
+    --sombra-md: 0 4px 6px rgba(0, 0, 0, 0,08);
+    --sombra-lg: 0 10px 25px rgba(0, 0, 0, 0,10);
+
+    /* transições */
+    --transicao: 0,2s ease;
+}
+
+/* remove estilo padrão de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* remove sublinhado de links; herda cor do pai */
+a {
+    text-decoration: none;
+    color: inherit
+}
+
 /* Pagina index */
 
 body {
-    background: rgba(245, 246, 250, 0.133);
-    color: rgb(63, 59, 59);
+    background: #f5f6fa;
+    color: #000000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-/* formulário de cadastro */
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: var(--espaco-lg); }
 
+p { color:#555555;}
 
-body {
-    background: rgba(245, 246, 250, 0.133);
-    color: rgb(63, 59, 59);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+small { 
+    font-size: 0.8rem;
+    color: #555555;
 }
 
-.label-padrao {
-    background: rgba(245, 246, 250, 0.133);
-    display: block;
-    font-weight: bold;
-    color: rgb(63, 59, 59);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.container {
+    width: 100%;
+    max-width: 1200px; /* largura máxima no desktop */
+    margin: 0 auto; /* centraliza horizontalmente */
+    padding: 0 var(--espaco-md); /*padding lateral */
 }
 
-.input-padrao {
-    margin: 6px 0 20px 0;
-    padding: 15px 20px;
-    background: rgba(245, 246, 250, 0.133);
-    color: rgb(63, 59, 59);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 1px solid rgba(245, 246, 250, 0.133);
-    width: 80%;
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-superfície);
+    padding: var(--espaco-lg) 0;
+    text-align: center;
+
+    /* posição fixa no topo ao rola a página */
+    position: fixed;
+    top:0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--espaco-md);
+}
+
+header h1 {
+    color: var(--cor-superfície);
+    font-size: 1.75rem;
+}
+
+header p {
+    color: var(--cor-texto);
+    font-size: 0.875rem;
+    display: none; /* esconde o slogan em telas pequenas */
+}
+
+nav ul {
+    display: flex;
+    gap: var(--espaco-md); /* Espaço entre links */
+    flex-direction: row;
+}
+
+nav a {
+    color: var(--cor-texto);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: var(--espaco-xs) var(--espaco-sm);
+    border-radius: var(--raio-sm);
+    transition: background-color var(--transicao), color var(--transicao);
+}
+
+/* :hover - mouse sobre o elemento */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.secao-form {
+    background-color: var(--cor-superfície);
+    border-radius: var(--raio-lg);
+    padding: var(--espaco-md);
+    box-shadow: var(--sombra-sm);
+    border: 1px solid
 }
