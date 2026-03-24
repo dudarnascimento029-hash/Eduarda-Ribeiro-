@@ -42,10 +42,10 @@ ul, ol {
     list-style: none;
 }
 
-/* remove sublinhado de links; herda cor do pai */
+/* remove sublinhado de links */
 a {
     text-decoration: none;
-    color: inherit
+    color: white
 }
 
 /* Pagina index */
@@ -70,21 +70,29 @@ small {
 
 .container {
     width: 100%;
-    max-width: 1200px; /* largura máxima no desktop */
+    max-width: 2000px; /* largura máxima no desktop */
     margin: 0 auto; /* centraliza horizontalmente */
     padding: 0 var(--espaco-md); /*padding lateral */
+}
+
+.secao-apresentacao {
+    background-color: var(--cor-borda);
+    border-radius: var(--raio-lg);
+    padding: var(--espaco-lg);
+    box-shadow: var(--sombra-md);
+    margin-bottom: var(--espaco-lg);
 }
 
 header {
     background-color: var(--cor-primaria);
     color: var(--cor-superfície);
-    padding: var(--espaco-lg) 0;
+    padding: var(--espaco-sm) 100px; 
     text-align: center;
 
     /* posição fixa no topo ao rola a página */
-    position: fixed;
-    top:0;
-    z-index: 100;
+    position: absolute;
+    top: -30px;
+    z-index: 3;
 }
 
 header .container {
@@ -110,6 +118,7 @@ nav ul {
     display: flex;
     gap: var(--espaco-md); /* Espaço entre links */
     flex-direction: row;
+    color: white;
 }
 
 nav a {
