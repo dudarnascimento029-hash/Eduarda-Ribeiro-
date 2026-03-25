@@ -1,37 +1,25 @@
 :root {
-    /* paleta de cores principal */
-    --cor-primaria: #008000; /* verde (header, títulos) */
-    --cor-secundaria: #000000; /* preto (destaques, links, botões) */
+    --cor-primaria: #046319; /* verde (header, títulos) */
+    --cor-texto: #000000; /* preto (destaques, links, botões) */
     --cor-acento: #c8f3c8; /* verde claro (fundos, badges) */
-
-    /* neutras */
     --cor-fundo: #f5f6fa; /* cinza claro (background geral) */
-    --cor-superfície: #ffffff; /* branco (cartões, formulários e seções) */
-    --cor-borda: #dcdcdc; /* cinza médio (bordas e separadores) */
-    --cor-texto: #000000; /* preto (texto principal) */
-    --cor-texto-muted: #555555; /* cinza escuro (texto secundário) */
+    --cor-texto-muted: #312c2c; /* cinza escuro (texto secundário) */
 
     /* tipografia */
     --fonte-principal: Verdana, Geneva, Tahoma, sans-serif;
     --tamanho-base: 16px;
+    --tamanho-menu: 14px;
     --linha-base: 1.5;
 
     /* espaçamento */
-    --espaco-xs: 4px;
     --espaco-sm: 8px;
-    --espaco-md: 16px;
-    --espaco-lg: 24px;
+    --espaco-lg: 16px;
 
     /* bordas */
-    --raio-sm: 4px;
     --raio-md: 8px;
-    --raio-lg: 12px;
-    --raio-xl: 16px;
 
     /* sombras */
-    --sombra-sm: 0 1px 3px rgba(0, 0, 0, 0.10);
-    --sombra-md: 0 4px 6px rgba(0, 0, 0, 0,08);
-    --sombra-lg: 0 10px 25px rgba(0, 0, 0, 0,10);
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.10);
 
     /* transições */
     --transicao: 0,2s ease;
@@ -47,6 +35,7 @@
 
 a {
     text-decoration: none;
+    color: var(--cor-secundaria);
 }
 
 body {
@@ -73,7 +62,7 @@ nav ul {
     display: flex;
     padding: 0%;
     gap: 20px;
-    margin: var(--espaco-sm);
+    margin: var(--espaco-lg);
     text-align: center;
     list-style: none;
     text-decoration: none;
@@ -83,6 +72,7 @@ nav ul li a {
     color: var(--cor-secundaria);
     font-weight: bold;
     transition: var(--transicao);
+    font-size: var(--tamanho-menu);
 }
 
 a:hover {
@@ -92,10 +82,10 @@ a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--espaco-md);
+    padding: var(--espaco-lg);
 }
 
-section { margin: auto; }
+section { margin: auto; padding: var(--espaco-sm);}
 
 footer {
     background-color: var(--cor-acento);
