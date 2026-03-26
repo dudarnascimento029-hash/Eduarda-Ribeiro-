@@ -5,6 +5,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.cabecalho-login {
+    color: rgb(63, 59, 59);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cor-acento);
+}
+
 .label-padrao {
     background: rgba(245, 246, 250, 0.133);
     display: block;
