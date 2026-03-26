@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Login</title>
 
-        <link rel="stylesheet" href="style/principla.css">
-    </head>
-    <body>
-        <h1>Prazu</h1>
-        <h2>Login</h2>
-        
-        <form>
-            <p>
-                <label for="E-mail">E-mail:</label>
-                <input id="E-mail" type="e-mail"
-            </p>
-            <p>
-                <label for="Senha">Senha:</label>
-                <input id="Senha" type="password"
-            </p>
-            <p>
-                <button type="submit">Entrar</button>
-                <button type="reset">Limpar</button>
-            </p>
-        </form>
-    </body>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Prazu - Login">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style/login.css">
+</head>
+
+<body>
+    <h1>Prazu</h1>
+    <h2>Login</h2>
+
+    <form id="tarefa-form" action="#" method="post">
+       
+        <div class="form-cadastro">
+            <label for="E-mail">E-mail:</label>
+            <input
+            id="E-mail" 
+            type="e-mail"
+            required
+        > 
+        <small class="importante">Campo obrigatório.</small>
+        </div>>
+
+        <div class="form-cadastro">
+            <label for="Senha">Senha:</label>
+            <input id="Senha"
+            type="password"
+            required
+        >
+        <small class="importante">Campo </small>
+        </div>
+
+        <div class="form-acoes">
+            <button type="submit" class="botao-padrao">Entrar</button>
+            <button type="reset" class="btn-secundario">Limpar</button>
+        </div>
+    </form>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prazu.</p>
+        </div>
+    </footer>
+</body>
+
 </html>

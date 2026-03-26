@@ -87,7 +87,7 @@ a:hover {
 
 section { margin: auto; padding: var(--espaco-sm);}
 
-footer {
+.footer {
     background-color: var(--cor-acento);
     padding: 20px;
     margin-top: 20px;
