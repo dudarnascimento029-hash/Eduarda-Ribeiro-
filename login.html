@@ -14,44 +14,51 @@
 </head>
 
 <body>
-    <cabeçalho>
-        <div class="cabecalho-login">
-            <h1>Prazu</h1>
-            <h2>Login</h2>
-        </div>
-    </cabeçalho>
+    <header>
+        <cabeçalho>
+            <div class="cabecalho-login">
+                <h1>Prazu</h1>
+                <h2>Login</h2>
+            </div>
+        </cabeçalho>
+    </header>
 
-    <form id="tarefa-form" action="#" method="post">
-       
-        <div class="form-cadastro">
-            <label for="E-mail">E-mail:</label>
-            <input id="E-mail" 
-            type="e-mail"
-            required
-        >
-        <small class="importante">Campo obrigatório.</small>
-        </div>
+    <main>
+        <div class="container">
+            <section id="login" class="secao-form secao-login">
+                <form id="login-form" action="dashboard.html" method="get">
+                    <div class="form-cadastro">
+                        <label for="login-email">E-mail:</label>
+                        <input id="login-email" 
+                        type="e-mail" 
+                        name="e-mail" 
+                        placeholder="seu@email.com"
+                        required
+                        >
+                    </div>
 
-        <div class="form-cadastro">
-            <label for="Senha">Senha:</label>
-            <input id="Senha"
-            type="password"
-            required
-        >
-        <small class="importante">Campo obrigatório.</small>
-        </div>
+                    <div class="form cadastro">
+                        <label for="login-senha">Senha:</label>
+                        <input id="login-senha" 
+                        type="password" 
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        required
+                        >
+                    </div>
 
-        <div class="form-acoes">
-            <button type="submit" class="botao-padrao">Entrar</button>
-            <button type="reset" class="botao-padrao-secundario">Limpar</button>
+                    <div class="form-acoes">
+                        <button type="submit" class="botao principal">Entrar</button>
+                    </div>
+                </form>
+            </section>
         </div>
-    </form>
-
+    </main>
+    
     <footer>
         <div class="container">
             <p>&copy; 2026 Prazu.</p>
         </div>
     </footer>
 </body>
-
 </html>
