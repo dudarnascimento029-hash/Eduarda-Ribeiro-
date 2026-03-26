@@ -9,6 +9,7 @@
     --fonte-principal: Verdana, Geneva, Tahoma, sans-serif;
     --tamanho-base: 16px;
     --tamanho-menu: 14px;
+    --tamanho-rodape: 5px;
     --linha-base: 1.5;
 
     /* espaçamento */
@@ -93,4 +94,5 @@ section { margin: auto; padding: var(--espaco-sm);}
     text-align: center;
     color: var(--cor-texto);
     background-color: var(--cor-acento);
+    font-size: var(--tamanho-rodape);
 }
