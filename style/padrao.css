@@ -1,59 +1,148 @@
-/* remove estilo padrão de listas */
-ul, ol {
-    list-style: none;
+:root {
+    --cor-primaria: #046319; /* verde (header, títulos) */
+    --cor-texto: #000000; /* preto (destaques, links, botões) */
+    --cor-acento: #c8f3c8; /* verde claro (fundos, badges) */
+    --cor-fundo: #f5f6fa; /* cinza claro (background geral) */
+    --cor-texto-muted: #312c2c; /* cinza escuro (texto secundário) */
+
+    /* tipografia */
+    --fonte-principal: Verdana, Geneva, Tahoma, sans-serif;
+    --tamanho-base: 16px;
+    --tamanho-menu: 14px;
+    --tamanho-rodape: 5px;
+    --linha-base: 1.5;
+
+    /* espaçamento */
+    --espaco-sm: 8px;
+    --espaco-lg: 16px;
+
+    /* bordas */
+    --raio-md: 8px;
+
+    /* sombras */
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.10);
+
+    /* transições */
+    --transicao: 0,2s ease;
 }
 
-/* remove sublinhado de links */
+*,
+*::before,
+*::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
-    color: white
+    color: var(--cor-secundaria);
 }
-
-/* Pagina index */
 
 body {
-    background: #f5f6fa;
+    background-color:var(--cor-fundo);
     color: #000000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-base);
+    line-height: var(--linha-base);
 }
 
-h1 { font-size: 2rem; font-weight: 700; }
-h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: var(--espaco-lg); }
+h1 {font-size: 2rem; font-weight: 700; }
+h2 {font-size: 1.5rem; font-weight: 600; margin: var(--espaco-lg); }
+h3 {font-size: 1.1rem; font-weight: 600; }
 
-p { color:#555555;}
+p {color: var(--cor-texto-muted);}
 
-small { 
-    font-size: 0.8rem;
-    color: #555555;
+header {
+    background-color: var(--cor-acento);
+    padding: 20px;
+    margin: -30px 0 20px 0;
+    /* posição fixa no topo ao rola a página */
+    position: absolute;
+    top: -30px;
+    z-index: 3;
+}
+
+nav ul {
+    display: flex;
+    padding: 0%;
+    gap: 20px;
+    margin: var(--espaco-lg);
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    transition: var(--transicao);
+    font-size: var(--tamanho-menu);
+}
+
+a:hover {
+    color: var(--cor-primaria);
+    background-color: #046319;
 }
 
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espaco-lg);
     width: 100%;
-    max-width: 2000px; /* largura máxima no desktop */
-    margin: 0 auto; /* centraliza horizontalmente */
-    padding: 0 var(--espaco-md); /*padding lateral */
+}
+
+section { margin: auto; padding: var(--espaco-sm);}
+
+.footer {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--cor-texto);
+    background-color: var(--cor-acento);
+    font-size: var(--tamanho-rodape);
 }
 
 .secao-apresentacao {
-    background-color: var(--cor-borda);
+    background-color: var(--cor-fundo);
     border-radius: var(--raio-lg);
     padding: var(--espaco-lg);
     box-shadow: var(--sombra-md);
     margin-bottom: var(--espaco-lg);
 }
 
-header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-superfície);
-    padding: var(--espaco-sm) 100px; 
-    text-align: center;
+.secao-beneficios {
+    background-color: var(--cor-fundo);
+    border-radius: var(--raio-lg);
+    padding: var(--espaco-lg);
+    box-shadow: var(--sombra-md);
+    margin-bottom: var(--espaco-lg);
+}
 
-    /* posição fixa no topo ao rola a página */
-    position: absolute;
-    top: -30px;
-    z-index: 3;
+.secao-chamada-acao {
+    background-color: var(--cor-fundo);
+    border-radius: var(--raio-lg);
+    padding: var(--espaco-lg);
+    box-shadow: var(--sombra-md);
+    margin-bottom: var(--espaco-lg);
+    color: #046319;
+}
+
+.secao-tabela {
+    background-color: var(--cor-acento);
+    border-radius: var(--raio-lg);
+    padding: var(--espaco-lg);
+    box-shadow: var(--sombra-md);
+    margin-bottom: var(--espaco-lg);
+    color: #000000;
+}
+
+.secao-cadastro-produtos {
+    background-color: var(--cor-fundo);
+    border-radius: var(--raio-lg);
+    padding: var(--espaco-lg);
+    box-shadow: var(--sombra-md);
+    margin-bottom: var(--espaco-lg);
 }
 
 header .container {
@@ -65,65 +154,70 @@ header .container {
 }
 
 header h1 {
-    color: var(--cor-superfície);
+    color: var(--cor-texto);
     font-size: 1.75rem;
 }
 
 header p {
-    color: var(--cor-texto);
+    color: var(--cor-texto-muted);
     font-size: 0.875rem;
-    display: none; /* esconde o slogan em telas pequenas */
-}
-
-nav ul {
-    display: flex;
-    gap: var(--espaco-md); /* Espaço entre links */
-    flex-direction: row;
-    color: white;
-}
-
-nav a {
-    color: var(--cor-texto);
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding: var(--espaco-xs) var(--espaco-sm);
-    border-radius: var(--raio-sm);
-    transition: background-color var(--transicao), color var(--transicao);
-}
-
-/* :hover - mouse sobre o elemento */
-nav a:hover {
-    background-color: rgba(14, 69, 189, 0.15);
-    color: rgb(19, 29, 177);
+    display: none;
 }
 
 .secao-form {
-    background-color: var(--cor-superfície);
+    background-color: var(--cor-fundo);
     border-radius: var(--raio-lg);
-    padding: var(--espaco-md);
+    padding: var(--espaco-sm);
     box-shadow: var(--sombra-sm);
     border: 1px solid var(--cor-borda);
 }
 
-/* grupo label e input */
-.form-group {
+.form-cadastro {
     display: flex;
-    flex-direction: column; /* label acima do input */
-    gap: var(--espaco-xs);
+    flex-direction: column; 
+    gap: var(--espaco-md);
     margin-bottom: var(--espaco-lg);
 }
 
-/* label: rótulo do campo */
-.form-group label {
+.form-cadastro label {
     font-weight: 600;
     font-size: 0.9rem;
     color: var(--cor-texto);
 }
 
-/* estilo unificado para input, text e select */
-.form-group input,
-.form-group textarea,
-.form-group select {
+.form-cadastro input,
+.form-cadastro select {
+    width: 100%;
+    padding: var(--espaco-sm) var(--espaco-md);
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--raio-md);
+    font-size: 1rem;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    transition: border-color var(--transicao), box-shadow var(--transicao);
+}
+
+.form-acoes {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--cor-texto-muted);
+}
+
+.form-cadastro-produtos {
+    display: flex;
+    flex-direction: column; 
+    gap: var(--espaco-md);
+    margin-bottom: var(--espaco-lg);
+}
+
+.form-cadastro-produtos label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+}
+
+.form-cadastro-produtos input,
+.form-cadastro-produtos select {
     width: 100%;
     padding: var(--espaco-sm) var(--espaco-md);
     border: 2px solid var(--cor-borda);
