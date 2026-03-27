@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Prazu</title>
 
-        <link rel="stylesheet" href="style/principla.css">
-        <link rel="stylesheet" href="style/padrao.css">
-    </head>
-    <body>
-        <h1>Estoque</h1>
-        <h2>Controle PVPS</h2>
-        <form>
-            <p>
-                <label for="cadastro_entrada">Data de Entrada:</label>
-                <input id="cadastro_entrada" type="text"
-            </p>
-            <p>
-                <label for="cadastro_validade">Data de Validade:</label>
-                <input id="cadastro_validade" type="text"
-            </p>
-        </form>
-        </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Prazu - Deixe seu estoque organizado e sem vencimentos">
+    <title>Prazu</title>
+
+    <link rel="stylesheet" href="style/principla.css">
+    <link rel="stylesheet" href="style/padrao.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul id="menu-principal">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <h1>Estoque</h1>
+            <p>Estoque organizado de forma fácil e eficiente.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="form-cadastro" class="form-cadastro">
+                <h2>Primeiro que Vence é o Primeiro que Sai</h2>
+
+                <form id="form-cadastro" action="lista-produtos.html" method="get">
+                    <div class="form-cadastro-entrada">
+                        <label for="cadastro_entrada">Data de Entrada:</label>
+                        <input id="cadastro_entrada" type="text" required>
+                    </div>
+
+                    <div class="form-cadastro-validade">
+                        <label for="cadastro_validade">Data de Validade:</label>
+                        <input id="cadastro_validade" type="text" required>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prazu.</p>
+        </div>
+    </footer>
+</body>
 </html>

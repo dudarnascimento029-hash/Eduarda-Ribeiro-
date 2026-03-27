@@ -227,3 +227,39 @@ header p {
     background-color: var(--cor-fundo);
     transition: border-color var(--transicao), box-shadow var(--transicao);
 }
+
+.form-cadastro-entrada label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+}
+
+.form-cadastro-entrada input,
+.form-cadastro-entrada select {
+    width: 100%;
+    padding: var(--espaco-sm) var(--espaco-md);
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--raio-md);
+    font-size: 1rem;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    transition: border-color var(--transicao), box-shadow var(--transicao);
+}
+
+.form-cadastro-validade label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+}
+
+.form-cadastro-validade input,
+.form-cadastro-validade select {
+    width: 100%;
+    padding: var(--espaco-sm) var(--espaco-md);
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--raio-md);
+    font-size: 1rem;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    transition: border-color var(--transicao), box-shadow var(--transicao);
+}

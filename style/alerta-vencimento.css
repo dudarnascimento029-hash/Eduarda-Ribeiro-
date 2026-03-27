@@ -1,0 +1,21 @@
+/* Estilo base do item */
+.vencimento-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-family: sans-serif;
+}
+
+/* Alerta de Vencido */
+.vencido {
+    background-color: #ffcccc; /* Fundo vermelho claro */
+    color: #cc0000;            /* Texto vermelho escuro */
+    border-left: 5px solid #cc0000;
+    font-weight: bold;
+}
+
+/* Alerta de Vencendo Hoje */
+.vencendo-hoje {
+    background-color: #fff3cd; /* Fundo amarelo */
+    color: #856404;            /* Texto marrom/amarelo */
+    border-left: 5px solid #ffc107;
+}
