@@ -13,54 +13,72 @@
     <link rel="stylesheet" href="style/cadastro.css">
 </head>
 
-<header>
-    <div class="container"></div>
-</header>
-
 <body>
-    <h1>Prazu</h1>
-    <h2>Formulário de Cadastro</h2>
-    <form id="tarefa-form" action="#" method="post">
-        <div class="form-cadastro">
-            <label for="cadastro_nome">Nome completo:</label>
-            <input id="cadastro_nome" type="text" required>
+    <header>
+        <div class="container">
+            <nav>
+                <ul id="menu-principal">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <h1>Prazu</h1>
+            <p>O aplicativo que deixará seu estoque organizado e sem vencimentos.</p>
         </div>
-        <small class="importante">Campo obrigatório.</small>
+    </header>
 
-        <div class="form-cadastro">
-            <label for="cadastro_email">E-mail:</label>
-            <input id="cadastro_email" type="email" required>
-        </div>
-        <small class="importante">Campo obrigatório.</small>
+    <main>
+        <div class="container">
+            <section id="cadastro" class="secao-cadastro">
+                <h2>Formulário de Cadastro</h2>
 
-        <div class="form-cadastro">
-            <label for="cadastro_telefone">Telefone:</label>
-            <input id="cadastro_telefone" type="text" required>
-        </div>
-        <small class="importante">Campo obrigatório.</small>
+                <form id="login-cadastro" action="login.html" method="get">
+                    <div class="form-cadastro">
+                        <label for="cadastro_nome">Nome completo:</label>
+                        <input id="cadastro_nome" type="text" required>
+                    </div>
 
-        <div class="form-cadastro">
-            <label for="cadastro_profissão">Profissão:</label>
-            <input id="cadastro_profissão" type="text" required>
-        </div>
-        <small class="importante">Campo obrigatório.</small>
+                    <div class="form-cadastro">
+                        <label for="cadastro_email">E-mail:</label>
+                        <input id="cadastro_email" type="email" required>
+                    </div>
 
-        <div class="form-cadastro">
-            <label for="cadastro_senha">Senha:</label>
-            <input id="cadastro_senha" type="password" required>
-        </div>
-        <small class="importante">Campo obrigatório.</small>
+                    <div class="form-cadastro">
+                        label for="cadastro_telefone">Telefone:</label>
+                        <input id="cadastro_telefone" type="text" required>
+                    </div>
 
-        <div class="form-cadastro">
-            <label for="cadastro_senha_confirm">Confirme a senha:</label>
-            <input id="cadastro_senha_confirm" type="password" required>
-        </div>
+                    <div class="form-cadastro">
+                        <label for="cadastro_profissão">Profissão:</label>
+                        <input id="cadastro_profissão" type="text" required>
+                    </div>
 
-        <div class="form-acoes">
-            <button type="reset" class="botao-padrao-secundario">Limpar</button>
-            <button type="submit" class="botao-padrao">Cadastrar</button>
+                    <div class="form-cadastro">
+                        <label for="cadastro_senha">Senha:</label>
+                        <input id="cadastro_senha" type="password" required>
+                    </div>
+
+                    <div class="form-cadastro">
+                        <label for="cadastro_senha_confirm">Confirme a senha:</label>
+                        <input id="cadastro_senha_confirm" type="password" required>
+                    </div>
+
+                    <div class="form-acoes">
+                        <button type="reset" class="botao-padrao-secundario">Limpar</button>
+                        <button type="submit" class="botao-padrao">Cadastrar</button>
+                    </div>
+                </form>
+            </section>
         </div>
-    </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Prazu.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -50,14 +50,7 @@ a:hover {
 
 section { margin: auto; padding: var(--espaco-sm);}
 
-.footer {
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-    color: var(--cor-texto);
-    background-color: var(--cor-acento);
-    font-size: var(--tamanho-rodape);
-}
+
 
 .label {
     background: rgba(245, 246, 250, 0.133);
@@ -88,3 +81,11 @@ section { margin: auto; padding: var(--espaco-sm);}
      font-weight: bold;
 }
 
+.footer {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--cor-texto);
+    background-color: var(--cor-acento);
+    font-size: var(--tamanho-rodape);
+}
